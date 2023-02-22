@@ -1,64 +1,111 @@
 .navbar {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-  padding: 20px 80px;
-  height: 70px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  background: linear-gradient(to top , transparent 0%,rgb(0 ,0,0,0.3) 50%);
-  
-  }
-  .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: linear-gradient(to top , transparent 0%,rgb(0 ,0,0,0.3) 50%);
+    transition: 0.4s;
+}
+
+
+
+.links {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  li{
+}
+li {
     list-style: none;
     padding: 0 20px;
-    
-  }
- li a{
+
+}
+li a {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 400;
-    color:#C0C0C0;
+    color: #C0C0C0;
     padding: 7px 8px;
-  }
-  .letter
-  {
-    
+}
+.letter {
+
     font-family: 'Dancing Script', cursive;
     color: #C3195D;
-  }
-  .container{
+}
+.container {
     text-decoration: none;
     font-size: 2.3rem;
     color: rgb(182, 188, 194);
-    
-  }
-  .scrolled{
-    background-color:black;
-    transition: .5s;
-  }
 
-  .scrolled a:hover{
-    background-color:#F70776;
-    transition: .5s;
+}
+.scrolled {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.scrolled .link:hover {
+    background-color: #F70776;
+    transition: 0.5s;
     border-radius: 5px;
     color: white;
     cursor: pointer;
     font-size: calc(21px - .4px);
-  }
+}
 
-  a:hover{
+.link:hover {
     color: white;
-    transition: .5s;
-    font-size: calc(21px + .5px);
+    transition: 0.2s;
+    font-size: calc(21px + .4px);
+}
+
+
+
+
+
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color:transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.scrolled .hamburger{
+  color: white;
+
+}
+.scrolled .hamburger:hover{
+  color: white;
+background: #F70776;
+}
+
+.hamburger:hover {
+  background: #C0C0C0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+   
+  .navmenu ul {
+    display: none;
   }
 
 
-
+  
+}

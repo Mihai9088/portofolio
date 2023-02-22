@@ -1,5 +1,106 @@
 
-img{
+
+
+.home{
     width: 100%;
-    object-fit: contain;
+    height: 101vh;
+  background: url(https://images.unsplash.com/photo-1509023464722-18d996393ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size:cover ;
+  
+}
+
+.main p{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.main{
+    margin-left: 5%;
+    position: absolute;
+   color:white;
+   bottom: 8%;
+}
+
+.main h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    background: url(back.png);
+    background-clip: text;
+    -webkit-text-stroke: 1px white;
+    -webkit-background-clip: text;
+    background-position: 0 0 ;
+    animation :back 20s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position:2000px 0 ;
+    }
+}
+
+
+.main h3{
+font-size: 50px;
+font-weight: 600;
+}
+
+.main .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.main a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+}
+
+.s1{position: relative;
+    top:2px;
+    font-size: 15px;
+    margin-left: 5px;
+
+}
+
+.s2{position: relative;
+    font-size: 15px;
+    margin-left: 5px;
+    top:2px;
+}
+
+
+.social{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+
+.aicons{
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+}
+
+.contact:hover{
+    cursor: pointer;
+    border-color:white;
+    box-shadow: 0 0 10px white;
+}
+.explore:hover{
+    cursor: pointer;
+    border-color:white;
+    box-shadow: 0 0 10px white;
+}
+
+.aicons:hover{
+    filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
 }
