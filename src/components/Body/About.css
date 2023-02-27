@@ -1,5 +1,5 @@
 .section {
-    height:80vh;
+    height:91vh;
     background: #101010;
 }
 
@@ -38,12 +38,12 @@ img {
     line-height: 1.5;
 }
 .img-cont {
-    margin-top: 10vh;
+    margin-top: 15vh;
     padding-top: 30px;
 
 }
 .cont {
-    padding-top: 4%;
+    padding-top: 10%;
     padding-left: 14%;
 }
 .p2 {
