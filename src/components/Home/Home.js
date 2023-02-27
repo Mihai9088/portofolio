@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar/Navbar";
 import image from "./bg.jpg";
 import "./Home.css";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaArrowDown } from "react-icons/fa";
 import { socials } from "./social";
 
 const Home = () => {
@@ -14,14 +14,14 @@ const Home = () => {
         <h1>MIHAI</h1>
         <h3>i am just existing</h3>
         <div className="row">
-          <a className="explore" href="">
-            Explore my portofolio
+          <a className="explore" href="#">
+            Download CV
             <span className="s1">
-              <FaArrowRight />
+              <FaArrowDown />
             </span>
           </a>
-          <a className="contact" href="">
-            Contact me
+          <a className="contact" href="#">
+            My Skills
             <span className="s2">
               <FaArrowRight />
             </span>
