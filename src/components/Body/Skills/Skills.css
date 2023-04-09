@@ -73,20 +73,30 @@
     color: rgb(198, 188, 188);
 }
 
-.desp-cont{
-    margin-top: 9%;
-    width: 100%;
+
+
+
+
+.divider {
+    position: relative;
+    display:flex;
+    left:1vw;
+    width: 50%;
+    height: 50px;
+  }
+  
+  .square {
+    position: relative;
+    margin-top: 21.5vh;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    background-color: #333;
     display: flex;
     align-items: center;
-   
-}
-
-.lines{
-    position: absolute;
-    width: 75%;
-    left:6%;
-    height: 1.5px;
-    top:20.8vh;
+    justify-content: center;
+    color: #f83535;
+    font-family: 'Dancing Script', cursive;
     background-image: linear-gradient(
         65deg,
         hsl(332deg 94% 50%) 0%,
@@ -96,50 +106,34 @@
         hsl(349deg 75% 70%) 44%,
         hsl(352deg 66% 73%) 56%,
         hsl(354deg 56% 74%) 67%,
-        hsl(356deg 42% 76%) 78%,
+        hsl(0, 43%, 76%) 78%,
         hsl(358deg 26% 77%) 89%,
         hsl(0deg 6% 78%) 100%
       );
-}
-
-.square{
-    height: 40px;
-    width: 40px;
-    border: 2px solid white;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    margin-left: 50px;
-    transform: rotate(45deg);
-    background-image: linear-gradient(
-        65deg,
-        hsl(332deg 94% 50%) 0%,
-        hsl(339deg 91% 60%) 11%,
-        hsl(343deg 87% 64%) 22%,
-        hsl(347deg 82% 68%) 33%,
-        hsl(349deg 75% 70%) 44%,
-        hsl(352deg 66% 73%) 56%,
-        hsl(354deg 56% 74%) 67%,
-        hsl(356deg 42% 76%) 78%,
-        hsl(358deg 26% 77%) 89%,
-        hsl(0deg 6% 78%) 100%
-      );
-}
-
-.SQletter{
-    font-size: 25px;
+  }
+  
+  .square span {
+    font-size: 24px;
     transform: rotate(-45deg);
-    padding-top: .5px;
-    padding-left: 6px;
-    padding-bottom: -10px;
-    color: #5d5c5c;
-}
-
-.relativ{
-    position: relative;
-}
-
-
-
-
+  }
+  
+  .line {
+    position: absolute;
+    left: 7.6%;
+    height: 2px;
+    width: 0;
+   background-color: #8ca3c6;
+    animation: line-anim 1s forwards;
+    margin-top: 25vh;
+   
+  }
+  
+  @keyframes line-anim {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: calc(100% - 50px);
+    }
+  }
+  

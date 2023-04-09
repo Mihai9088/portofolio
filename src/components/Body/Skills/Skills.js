@@ -28,13 +28,11 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="relativ" data-aos="fade-right">
-        <div className="lines"></div>
-      </div>
-      <div className="desp-cont">
-        <div className="square">
-          <div className="SQletter">M</div>
+      <div class="divider">
+        <div class="square">
+          <span>M</span>
         </div>
+        <div class="line"></div>
       </div>
     </div>
   );
