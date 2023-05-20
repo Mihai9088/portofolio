@@ -3,7 +3,7 @@ import { FaFacebook, FaGithub, FaWhatsapp } from "react-icons/fa";
 export const socials = [
   {
     id: 1,
-    url: "https://www.twitter.com",
+    url: "https://www.facebook.com/mihai.voina.52/",
     icon: <FaFacebook />,
   },
   {
