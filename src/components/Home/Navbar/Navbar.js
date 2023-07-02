@@ -12,6 +12,10 @@ const Navbar = () => {
     return () => (window.onscroll = null);
   };
 
+  const handleNavToggle = () => {
+    setIsNavExpanded(!isNavExpanded);
+  };
+
   return (
     <nav className={isScrolled ? "navbar scrolled" : "navbar"}>
       <a className="container " href="#">
@@ -19,7 +23,7 @@ const Navbar = () => {
       </a>
 
       <div className={isNavExpanded ? "links expanded" : "links"}>
-        <div className="navmenu">
+        <div className={isNavExpanded ? "expnav" : "navmenu"}>
           <ul className="links">
             {links.map((item) => {
               const { id, text } = item;
@@ -33,16 +37,10 @@ const Navbar = () => {
             })}
           </ul>
         </div>
-
-        <button
-          onClick={() => {
-            setIsNavExpanded(!isNavExpanded);
-          }}
-          className="hamburger"
-        >
-          <FaBars />
-        </button>
       </div>
+      <button onClick={handleNavToggle} className="hamburger">
+        {isNavExpanded ? <FaTimes /> : <FaBars />}
+      </button>
     </nav>
   );
 };

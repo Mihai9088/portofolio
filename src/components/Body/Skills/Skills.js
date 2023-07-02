@@ -28,11 +28,11 @@ const Skills = () => {
         </div>
       </div>
 
-      <div class="divider">
-        <div class="square">
+      <div className="divider">
+        <div className="square">
           <span>M</span>
         </div>
-        <div class="line"></div>
+        <div className="line"></div>
       </div>
     </div>
   );

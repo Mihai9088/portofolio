@@ -80,11 +80,12 @@ li a {
   right: 25px;
   transform: translateY(-50%);
   display: none;
+  color: #c0cbcb;
+  
 }
 
 .scrolled .hamburger{
-  color: white;
-
+  color:#C0C0C0;
 }
 .scrolled .hamburger:hover{
   color: white;
@@ -92,20 +93,66 @@ background: #F70776;
 }
 
 .hamburger:hover {
-  background: #C0C0C0;
+  background: rgb(124, 130, 130);
+  
 }
 
 
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
+  
   }
+ 
+  .links.expanded {
+    position: fixed;
+    top: 0;
+   right: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
 
-   
-  .navmenu ul {
+  .navmenu  {
     display: none;
   }
 
+  .expnav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .links.expanded {
+    transform: translateY(0%);
+  }
+
+
+  .links.expanded li {
+    margin-bottom: 20px;
+  }
+
+  .links.expanded li a {
+    color:#C0C0C0 ;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+  
+  }
+
+  .links.expanded li a:hover {
+    border-radius: 5px;
+   font-size: 23px;
+  }
+
+  
 
   
 }
