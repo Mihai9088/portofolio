@@ -104,3 +104,72 @@ font-weight: 600;
 .aicons:hover{
     filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .home{
+        width: 100%;
+        height: 100vh;
+      background: url(https://images.unsplash.com/photo-1509023464722-18d996393ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+      background-repeat: no-repeat;
+      background-size:cover ;
+      
+    }
+
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+   
+    .main h1{
+        font-size: 50px;
+        line-height: 160px;
+        margin-left: -30px;
+        color: transparent;
+        background: url(back.png);
+        background-clip: text;
+        -webkit-text-stroke: 1px white;
+        -webkit-background-clip: text;
+        background-position: 0 0 ;
+        animation :back 20s linear infinite;
+    }
+    .main p{
+        margin-left: -30px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .main h3{
+        margin-left: -30px;
+        font-size:30px;
+        font-weight: 600;
+        }
+        .main .row{
+            display: flex;
+            align-items: center;
+        justify-content: space-around;
+            margin-top: 50px;
+            padding: 20px;
+        }
+        .social{
+          display: none;
+        }
+        .btndesc{
+            margin-top: 25px;
+        }
+
+        .main a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+        }
+      
+}

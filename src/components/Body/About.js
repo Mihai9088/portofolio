@@ -15,7 +15,7 @@ const About = () => {
       <div className="hero">
         <div data-aos="fade-right">
           <div className="img-cont">
-            <img src={image} alt="" />
+            <img src={image} className="profile-img" alt="" />
           </div>
         </div>
         <div data-aos="fade-left">

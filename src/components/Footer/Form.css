@@ -1,0 +1,112 @@
+.formbg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #101010;
+  }
+  
+  .form-cont {
+    width: 60%;
+    padding: 20px;
+  }
+  
+  .greet {
+    margin-bottom: 10px;
+    
+    margin-top: 4vh;
+    color:  #C0C0C0;
+    font-size: 50px;
+    background: -webkit-linear-gradient(120deg, hsl(0deg 0% 75%) 20%, hsl(84deg 21% 74%) 64%, hsl(85deg 40% 73%) 74%, hsl(86deg 58% 71%) 78%, hsl(86deg 74% 69%) 82%, hsl(87deg 88% 67%) 87%, hsl(87deg 100% 64%) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  input,
+  textarea {
+    padding: 20px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  input[type="submit"] {
+    background-color:  #7a6d6d;
+    color: rgb(231, 218, 218);
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 300;
+    font-size: x-large;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #82878c;
+  }
+  
+  input::placeholder,
+textarea::placeholder {
+  color: #999; 
+  font-style: italic; 
+  font-weight: 1000;
+  font-size: large;
+}
+
+textarea{
+    padding-bottom: 100px;
+     
+}
+
+.form-button{
+    color:red;
+}
+
+.spanform{
+    color :#999;
+    font-size: large;
+}
+.phicon{
+    color: #999;
+   margin-right: 20px;
+}
+.cont-finish{
+width: 100%;
+height: 2.5px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.finish{
+    height: 100%;
+    width: 75%;
+    background-image: linear-gradient(
+        60deg,
+        hsl(0deg 0% 19%) 28%,
+        hsl(0deg 2% 26%) 75%,
+        hsl(0deg 4% 33%) 88%,
+        hsl(0deg 5% 41%) 95%,
+        hsl(0deg 5% 49%) 99%,
+        hsl(0deg 8% 57%) 101%,
+        hsl(330deg 6% 48%) 101%,
+        hsl(268deg 6% 41%) 102%,
+        hsl(219deg 13% 33%) 101%,
+        hsl(199deg 25% 23%) 101%,
+        hsl(182deg 38% 14%) 100%
+      );
+    margin-top: 40px;
+}

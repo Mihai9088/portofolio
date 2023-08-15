@@ -12,27 +12,33 @@ const Skills = () => {
   return (
     <div className="bg-cont">
       <div className="skills-container">
-        <div className="title">Technologies I Enjoy Working With</div>
-        <div className="contskills">
-          {skills.map((skillIcon) => {
-            const { id, name, icon } = skillIcon;
-            return (
-              <div key={id} className="card-cont">
-                <div className="skills">
-                  <div className="rskills">{name}</div>
-                  <span className="skill-span">{icon}</span>
+        <div data-aos="fade-down">
+          <div className="title">Technologies I Enjoy Working With</div>
+        </div>
+
+        <div data-aos="fade-up">
+          <div className="contskills">
+            {skills.map((skillIcon) => {
+              const { id, name, icon } = skillIcon;
+              return (
+                <div key={id} className="card-cont">
+                  <div className="skills">
+                    <div className="rskills">{name}</div>
+                    <span className="skill-span">{icon}</span>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
-
-      <div className="divider">
-        <div className="square">
-          <span>M</span>
+      <div data-aos="fade-right">
+        <div className="divider">
+          <div className="square">
+            <span>M</span>
+          </div>
+          <div className="line"></div>
         </div>
-        <div className="line"></div>
       </div>
     </div>
   );

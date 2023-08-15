@@ -26,7 +26,7 @@ const Home = () => {
               <FaArrowRight />
             </span>
           </a>
-          <span>
+          <span className="btndesc">
             You Can See More About My Portofolio And <br />
             Personal Life Experience here
           </span>

@@ -21,7 +21,7 @@
 
 }
 
-img {
+.profile-img {
     position: relative;
     top: 50%;
     height: 22em;
@@ -86,5 +86,36 @@ img {
 .about-a1:hover {
     cursor: pointer;
     background-image: linear-gradient(120deg, hsl(244deg 90% 53%) 0%, hsl(243deg 79% 50%) 1%, hsl(241deg 78% 47%) 3%, hsl(240deg 78% 43%) 5%, hsl(238deg 82% 39%) 7%, hsl(236deg 87% 35%) 10%, hsl(233deg 93% 31%) 15%, hsl(231deg 100% 27%) 26%, hsl(241deg 45% 35%) 51%, hsl(232deg 28% 36%) 66%, hsl(195deg 17% 36%) 75%, hsl(140deg 23% 40%) 83%, hsl(124deg 34% 44%) 89%, hsl(119deg 51% 45%) 95%, hsl(121deg 93% 41%) 100%);
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .profile-img {
+        position: relative;
+        top: 50%;
+        height: 22em;
+        width: 22em;
+        object-fit: cover;
+        background: linear-gradient(black,black) padding-box, linear-gradient(to right, hsl(121deg 93% 41%) 0%, hsl(88deg 98% 37%) 1%, hsl(71deg 100% 33%) 3%, hsl(55deg 100% 33%) 4%, hsl(42deg 100% 37%) 6%, hsl(31deg 100% 41%) 9%, hsl(20deg 100% 44%) 12%, hsl(0deg 100% 47%) 16%, hsl(349deg 100% 44%) 22%, hsl(341deg 100% 40%) 35%, hsl(331deg 100% 35%) 53%, hsl(319deg 100% 31%) 69%, hsl(301deg 96% 26%) 81%, hsl(275deg 84% 32%) 91%, hsl(232deg 100% 34%) 100%) border-box;
+        border: 2px solid transparent;
+        border-radius:10px;
+    display:none;
+    }
+    .cont h1 {
+        font-size: 62px;
+        background: -webkit-linear-gradient(120deg, hsl(0deg 0% 75%) 20%, hsl(84deg 21% 74%) 64%, hsl(85deg 40% 73%) 74%, hsl(86deg 58% 71%) 78%, hsl(86deg 74% 69%) 82%, hsl(87deg 88% 67%) 87%, hsl(87deg 100% 64%) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+    }
+
+    .cont {
+        padding-top: 25px;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
 
 }
