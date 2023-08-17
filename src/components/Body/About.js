@@ -22,13 +22,13 @@ const About = () => {
           <div className="cont">
             <h1>About Me</h1>
             <div className="content">
-              <p>
+              <p className="par1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
                 tempore non, fugit consequatur sint sit facilis suscipit
                 architecto ratione reprehenderit ad dolorem reiciendis
                 necessitatibus perspiciatis!
               </p>
-              <p className="p2">
+              <p className="par2">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Doloribus, adipisci.
               </p>

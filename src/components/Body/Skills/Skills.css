@@ -38,7 +38,7 @@
     width: 100%;
 }
 
-.card-cont{
+.card-conta{
     position: relative;
    left:-5%;
  width: 50%;
@@ -135,5 +135,80 @@
     100% {
       width: calc(100% - 50px);
     }
+  }
+
+  @media screen and (max-width: 768px){
+    .skills-container{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 30vh;
+    flex-direction: column;
+  }
+  
+  .title{
+      margin-top: 4vh;
+      color:  #C0C0C0;
+      font-size: 50px;
+      background: -webkit-linear-gradient(120deg, hsl(0deg 0% 75%) 20%, hsl(84deg 21% 74%) 64%, hsl(85deg 40% 73%) 74%, hsl(86deg 58% 71%) 78%, hsl(86deg 74% 69%) 82%, hsl(87deg 88% 67%) 87%, hsl(87deg 100% 64%) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+  
+  }
+  
+  .contskills{
+      margin-top: 10vh;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .skills{
+      display: flex;
+      margin-left: 35px;
+      color: #C0C0C0;
+      padding:  20px;
+      width: 100%;
+  }
+  
+  .card-conta{
+      position: relative;
+     left:-5%;
+   width: 50%;
+  }
+  .rskills{
+      background:#303030;
+      padding: 10px 10px;
+      padding-right: 0px;
+      font-size: 15px;
+  }
+  
+  .skill-span{
+      display: flex;
+      align-items: center;
+      background-image: linear-gradient(
+          60deg,
+          hsl(0deg 0% 19%) 28%,
+          hsl(0deg 2% 26%) 75%,
+          hsl(0deg 4% 33%) 88%,
+          hsl(0deg 5% 41%) 95%,
+          hsl(0deg 5% 49%) 99%,
+          hsl(0deg 8% 57%) 101%,
+          hsl(330deg 6% 48%) 101%,
+          hsl(268deg 6% 41%) 102%,
+          hsl(219deg 13% 33%) 101%,
+          hsl(199deg 25% 23%) 101%,
+          hsl(182deg 38% 14%) 100%
+        );
+      width: 100%;
+      justify-content: flex-end;
+      padding-right: 0px;
+      font-size: 25px;
+      color: rgb(198, 188, 188);
+  }
+  .divider{
+    display: none;
+  }
   }
   
