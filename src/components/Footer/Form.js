@@ -28,7 +28,7 @@ const Form = () => {
   };
 
   return (
-    <div className="formbg">
+    <div className="formbg" id="contact">
       <div className="greet">Contact me</div>
       <div className="form-cont">
         <form ref={form} onSubmit={sendEmail}>

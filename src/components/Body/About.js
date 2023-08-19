@@ -11,7 +11,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="section">
+    <div className="section" id="about">
       <div className="hero">
         <div data-aos="fade-right">
           <div className="img-cont">
@@ -23,20 +23,23 @@ const About = () => {
             <h1>About Me</h1>
             <div className="content">
               <p className="par1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                tempore non, fugit consequatur sint sit facilis suscipit
-                architecto ratione reprehenderit ad dolorem reiciendis
-                necessitatibus perspiciatis!
+                Hello! My name is Voina Mihai and I live in Sibiu, Romania.I
+                consider myself a sociable and friendly person, I have always
+                liked teamwork, so the integration in a new community was never
+                a problem.
               </p>
               <p className="par2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Doloribus, adipisci.
+                I started programming in 2022, I chose JavaScript because it's
+                versatility appealed to me, it gives me the ability to work on
+                all parts of a web application. Web Development is a constantly
+                growing field, which motivated me to invest time and effort in
+                learning this language.
               </p>
               <div className="a-links">
-                <a className="about-a1" href="#">
+                <a className="about-a1" href="#skills">
                   Skills
                 </a>
-                <a className="about-a2" href="#">
+                <a className="about-a2" href="#portofolio">
                   Portofolio
                 </a>
               </div>

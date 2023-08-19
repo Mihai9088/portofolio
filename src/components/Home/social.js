@@ -1,4 +1,4 @@
-import { FaFacebook, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export const socials = [
   {
@@ -8,12 +8,12 @@ export const socials = [
   },
   {
     id: 2,
-    url: "https://www.twitter.com",
+    url: "https://github.com/Mihai9088?tab=repositories",
     icon: <FaGithub />,
   },
   {
     id: 3,
-    url: "https://www.twitter.com",
-    icon: <FaWhatsapp />,
+    url: "https://www.linkedin.com/in/mihai-voina-825502264/",
+    icon: <FaLinkedinIn />,
   },
 ];

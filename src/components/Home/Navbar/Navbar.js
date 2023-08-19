@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <nav className={isScrolled ? "navbar scrolled" : "navbar"}>
-      <a className="container " href="#">
+      <a className="container " href="#home">
         M <span className="letter">V</span>
       </a>
 
@@ -26,10 +26,10 @@ const Navbar = () => {
         <div className={isNavExpanded ? "expnav" : "navmenu"}>
           <ul className="links">
             {links.map((item) => {
-              const { id, text } = item;
+              const { id, text, sectionId } = item;
               return (
                 <li key={id}>
-                  <a className="link" href="#">
+                  <a className="link" href={`#${sectionId}`}>
                     {text}
                   </a>
                 </li>

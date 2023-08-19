@@ -10,7 +10,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="bg-cont">
+    <div className="bg-cont" id="skills">
       <div className="skills-container">
         <div data-aos="fade-down">
           <div className="title">Technologies I Enjoy Working With</div>
