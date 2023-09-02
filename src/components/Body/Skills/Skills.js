@@ -32,14 +32,6 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div data-aos="fade-right">
-        <div className="divider">
-          <div className="square">
-            <span>M</span>
-          </div>
-          <div className="line"></div>
-        </div>
-      </div>
     </div>
   );
 };

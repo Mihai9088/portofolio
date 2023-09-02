@@ -1,5 +1,5 @@
 .projectsBg{
-    width: 100%;
+    width: 100vw;
     height: 110vh;
 }
 .valuri{ width: 100%;
@@ -23,12 +23,14 @@ background-repeat: no-repeat;
   width: 100%;
 }
 
+
 .card {
   width: 330px;
-  height: 400px;
+  height: 56%;
   background-color:rgb(86, 83, 83);
   border-radius: 10px;
   margin: 20px;
+  margin-bottom:10px ;
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -48,7 +50,7 @@ background-repeat: no-repeat;
 }
 .intro{
   padding-left: 3%;
-  
+  text-align: start;
 }
 
 .cbtn1{
@@ -120,17 +122,20 @@ align-items: center;
 
 
 @media screen and (max-width: 768px) {
- 
+  .card-cont{
+    margin:0;
+  }
 
   .card {
     width: 300px;
-    height: 430px;
+    height: 56%;
+    margin-left: 10px;
     
   }
 
   .projectsBg{
-    width: 100%;
-    height: 235vh;
+    max-width: 100vw;
+    height: 240vh;
 }
 
 .valuri{ 

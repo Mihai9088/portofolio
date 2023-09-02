@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import "./Form.css";
@@ -6,6 +6,8 @@ import { FaLocationPin, FaPhone } from "react-icons/fa";
 
 const Form = () => {
   const form = useRef();
+  const [isSent, setIsSent] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,9 +22,12 @@ const Form = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setIsSent(true);
+          setIsFormSubmitted(true);
         },
         (error) => {
           console.log(error.text);
+          setIsSent(false);
         }
       );
   };
@@ -31,16 +36,20 @@ const Form = () => {
     <div className="formbg" id="contact">
       <div className="greet">Contact me</div>
       <div className="form-cont">
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" placeholder="ENTER YOUR NAME" />
-          <input
-            type="email"
-            name="user_email"
-            placeholder="ENTER YOUT EMAIL"
-          />
-          <textarea name="message" placeholder="WRITE YOUR MESSAGE" />
-          <input type="submit" value="Send" />
-        </form>
+        {isFormSubmitted ? (
+          <p className="success-message">Form submitted successfully!</p>
+        ) : (
+          <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="user_name" placeholder="ENTER YOUR NAME" />
+            <input
+              type="email"
+              name="user_email"
+              placeholder="ENTER YOUR EMAIL"
+            />
+            <textarea name="message" placeholder="WRITE YOUR MESSAGE" />
+            <input type="submit" value="Send" />
+          </form>
+        )}
       </div>
 
       <div className="phone">

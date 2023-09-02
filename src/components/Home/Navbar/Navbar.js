@@ -22,13 +22,13 @@ const Navbar = () => {
         M <span className="letter">V</span>
       </a>
 
-      <div className={isNavExpanded ? "links expanded" : "links"}>
+      <div className={isNavExpanded ? "links-expanded" : "links"}>
         <div className={isNavExpanded ? "expnav" : "navmenu"}>
           <ul className="links">
             {links.map((item) => {
               const { id, text, sectionId } = item;
               return (
-                <li key={id}>
+                <li className="li" key={id}>
                   <a className="link" href={`#${sectionId}`}>
                     {text}
                   </a>

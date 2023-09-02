@@ -1,6 +1,7 @@
 .bg-cont{
     height:85vh;
     background: #101010;
+    width: 100vw;
 }
 
 
@@ -77,56 +78,9 @@
 
 
 
-.divider {
-    position: relative;
-    display:flex;
-    left:1vw;
-    width: 50%;
-    height: 50px;
-  }
   
-  .square {
-    position: relative;
-    margin-top: 22vh;
-    width: 50px;
-    height: 50px;
-    transform: rotate(45deg);
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #f83535;
-    font-family: 'Dancing Script', cursive;
-    background-image: linear-gradient(
-        65deg,
-        hsl(332deg 94% 50%) 0%,
-        hsl(339deg 91% 60%) 11%,
-        hsl(343deg 87% 64%) 22%,
-        hsl(347deg 82% 68%) 33%,
-        hsl(349deg 75% 70%) 44%,
-        hsl(352deg 66% 73%) 56%,
-        hsl(354deg 56% 74%) 67%,
-        hsl(0, 43%, 76%) 78%,
-        hsl(358deg 26% 77%) 89%,
-        hsl(0deg 6% 78%) 100%
-      );
-  }
   
-  .square span {
-    font-size: 24px;
-    transform: rotate(-45deg);
-  }
   
-  .line {
-    position: absolute;
-    left: 7%;
-    height: 2px;
-    width: 0px;
-   background-color: #a2a9b3;
-    animation: line-anim 1s forwards;
-    margin-top: 25vh;
-   
-  }
   
   @keyframes line-anim {
     0% {
@@ -138,6 +92,11 @@
   }
 
   @media screen and (max-width: 768px){
+    .bg-cont{
+      height:90vh;
+      background: #101010;
+      max-width: 100vw;
+  }
     .skills-container{
       display: flex;
     justify-content: center;
@@ -148,9 +107,8 @@
   }
   
   .title{
-      margin-top: 4vh;
       color:  #C0C0C0;
-      font-size: 50px;
+      font-size: 40px;
       background: -webkit-linear-gradient(120deg, hsl(0deg 0% 75%) 20%, hsl(84deg 21% 74%) 64%, hsl(85deg 40% 73%) 74%, hsl(86deg 58% 71%) 78%, hsl(86deg 74% 69%) 82%, hsl(87deg 88% 67%) 87%, hsl(87deg 100% 64%) 100%);
       -webkit-background-clip: text;
       background-clip: text;
@@ -159,14 +117,14 @@
   }
   
   .contskills{
-      margin-top: 10vh;
+      margin-top: 25%;
       display: flex;
       flex-wrap: wrap;
   }
   
   .skills{
       display: flex;
-      margin-left: 35px;
+      margin-left: 20%;
       color: #C0C0C0;
       padding:  20px;
       width: 100%;
@@ -174,8 +132,10 @@
   
   .card-conta{
       position: relative;
-     left:-5%;
+     left:-35%;
    width: 50%;
+   transform: translate(50%);
+   margin-top: 10%;
   }
   .rskills{
       background:#303030;
@@ -203,12 +163,10 @@
         );
       width: 100%;
       justify-content: flex-end;
-      padding-right: 0px;
+      padding-right: 10px;
       font-size: 25px;
       color: rgb(198, 188, 188);
   }
-  .divider{
-    display: none;
-  }
+  
   }
   
