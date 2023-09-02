@@ -136,14 +136,14 @@ align-items: center;
   .projectsBg{
     max-width: 100vw;
     height: 240vh;
+    
 }
 
 .valuri{ 
   height: 100%;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), #101010;
-background-size: cover;
-background-repeat: no-repeat;
+
 
 }
 }

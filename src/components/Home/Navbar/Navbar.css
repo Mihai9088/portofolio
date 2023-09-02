@@ -135,6 +135,7 @@ li a {
       border:2px solid #C0C0C0;
       border-top: none;
       border-bottom: none;
+      border-left: none;
      padding: 75px 0;
       
     }
