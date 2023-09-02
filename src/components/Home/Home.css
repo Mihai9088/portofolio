@@ -173,4 +173,7 @@ font-weight: 600;
             align-items: center;
         }
       
+        .contact{
+            margin-top: 15px;
+          }
 }
