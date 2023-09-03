@@ -1,16 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import { links } from "./Links";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-
   const [isScrolled, setIsScrolled] = useState(false);
-  window.onscroll = () => {
-    setIsScrolled(window.pageYOffset === 0 ? false : true);
-    return () => (window.onscroll = null);
-  };
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setIsNavExpanded(false);
+      }
+    };
+
+    window.onscroll = () => {
+      setIsScrolled(window.pageYOffset === 0 ? false : true);
+    };
+
+    window.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      window.removeEventListener("mousedown", handleClickOutside);
+      window.onscroll = null;
+    };
+  }, []);
 
   const handleNavToggle = () => {
     setIsNavExpanded(!isNavExpanded);
@@ -22,7 +36,7 @@ const Navbar = () => {
         M <span className="letter">V</span>
       </a>
 
-      <div className={isNavExpanded ? "links-expanded" : "links"}>
+      <div className={isNavExpanded ? "links-expanded" : "links"} ref={navRef}>
         <div className={isNavExpanded ? "expnav" : "navmenu"}>
           <ul className="links">
             {links.map((item) => {
