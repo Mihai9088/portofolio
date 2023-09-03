@@ -141,6 +141,14 @@ li a {
       
     }
 
+    .scrolled .links li a:hover{
+      transition: 0.5s;
+      background-color: transparent;
+      cursor: pointer;
+    
+      color: #C0C0C0;
+    }
+
     
   
     .links-expanded .links {

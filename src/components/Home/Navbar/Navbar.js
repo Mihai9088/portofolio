@@ -10,7 +10,17 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (navRef.current && !navRef.current.contains(event.target)) {
+      if (
+        isNavExpanded &&
+        navRef.current &&
+        !navRef.current.contains(event.target)
+      ) {
+        setIsNavExpanded(false);
+      }
+    };
+
+    const handleEscapeKey = (event) => {
+      if (event.key === "Escape") {
         setIsNavExpanded(false);
       }
     };
@@ -20,8 +30,11 @@ const Navbar = () => {
     };
 
     window.addEventListener("mousedown", handleClickOutside);
+    window.addEventListener("keydown", handleEscapeKey);
+
     return () => {
       window.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("keydown", handleEscapeKey);
       window.onscroll = null;
     };
   }, []);
