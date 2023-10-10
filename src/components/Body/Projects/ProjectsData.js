@@ -3,6 +3,7 @@ import shop from "./shop.png";
 import login from "./login.png";
 import cocktails from "./cocktails.png";
 import redux from "./ReduxShop.png";
+import movies from "./Movies.png";
 
 const data = [
   {
@@ -44,6 +45,16 @@ const data = [
     secondIcon: <FaGithub />,
     urlFirst: "https://mihai-cocktails.netlify.app",
     urlSecond: "https://github.com/Mihai9088/Cocktails",
+  },
+  {
+    image: movies,
+    title: "Movies App",
+    description:
+      " A basic movie app, an API was used to fetch the movies. The technologies that were used are React.js, css modules, axios and redux toolkit.",
+    firstIcon: <FaEye />,
+    secondIcon: <FaGithub />,
+    urlFirst: "https://reelworldapp.netlify.app/",
+    urlSecond: "https://github.com/Mihai9088/MovieApp",
   },
 ];
 

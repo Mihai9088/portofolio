@@ -135,7 +135,7 @@ align-items: center;
 
   .projectsBg{
     max-width: 100vw;
-    height: 240vh;
+    height: auto;
     
 }
 
@@ -143,7 +143,7 @@ align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(image.jpg);
 }
 .valuri{ 
-  height: 100%;
+  height: auto;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(image.jpg);
   
